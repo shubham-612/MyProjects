@@ -1,0 +1,34 @@
+package com.cg.stat;
+
+import java.util.Scanner;
+
+
+public class Use {
+	static {
+		System.out.println("Welcome to Accenture");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp = new Employee();
+		emp.display();
+		Employee emp1 = new Employee(1, "Shubham" , 26156);
+		emp1.display();
+		emp1.setId(100);
+		System.out.println(emp.getId());
+		System.out.println(emp1);
+		
+//		Scanner sc = new Scanner(System.in); 
+//		
+//		String Fname = sc.nextLine();
+//		int age = sc.nextInt();
+//		char gender = sc.next().charAt(0);
+//		long mobile = sc.nextLong();
+//		System.out.println(Fname);
+//		System.out.println(age);
+//		System.out.println(gender);
+//		System.out.println(mobile);
+//		sc.close();
+		
+	}
+
+}

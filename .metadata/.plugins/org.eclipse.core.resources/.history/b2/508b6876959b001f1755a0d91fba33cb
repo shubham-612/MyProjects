@@ -1,0 +1,68 @@
+package com.cg.playwithstring;
+
+public class Play {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Alex";
+		s.concat("martin");
+		
+		// STRING ARE IMMUTABLE MEANS WE CAN'T UPDATE A CREATED STRING
+		System.out.println("new : " + s);
+		
+		// CONCAT WILL
+		System.out.println(s.concat("martin"));
+		
+		System.out.println(s);
+		
+		String s1 = "apples";
+		String s2 = "aPPles"; // it is not creating a new string, it is referencing to string s1
+		String s3 = new String("apples"); // it will create a new string
+		String s4 = "mango      ";
+		
+		System.out.println(s1==s2); // compares using reference
+		System.out.println(s1.equals(s2)); // compares using characters
+		
+		System.out.println(s1==s3);
+		System.out.println(s1.equals(s3));
+		
+		System.out.println(s1.compareTo(s2));
+		
+		System.out.println(s1.compareTo(s4));
+		System.out.println(s4.compareTo(s1));
+		
+		StringBuilder sb = new StringBuilder("hello"); // NON SYNCHRONISED AND FASTER
+		StringBuffer sbf = new StringBuffer("hello"); // SYNCHRONISED AND SLOW
+		
+		sb.append(" capg");// add to the sb string
+		System.out.println(sb); // combined string is printed
+		
+		sbf.append(" capg");// add to the sbf string
+		System.out.println(sbf); // combined string is printed
+		
+		System.out.println(s1.length());
+		
+		System.out.println(s1.substring(2)); // PRINT FROM THE 2ND POSITION
+		
+		System.out.println(s1.charAt(4)); // PRINT THE GIVEN POSITION CHARACTER
+		
+		System.out.println(s1.toUpperCase()); // CONVERT TO UPPERCASE
+		
+		System.out.println(s1.equals(s2)); // CHARACTER MISMATCH DUE TO UPPER AND LOWER CASE
+		
+		System.out.println(s1.equalsIgnoreCase(s2));
+		
+		System.out.println(s1.replace("apples", "mango"));
+		System.out.println(s4 + "hello");
+		System.out.println(s4.trim() + "hello");// remove extra space after a string
+		
+		String s5 = "Its too hot in the class";
+		
+		String[] words = s5.split(" ");
+		
+		System.out.println(words.length);
+	}
+
+	
+	// Accept a long sentence from user and find total number of words present in the sentence and check how many palindrome, vowels, consonants, duplicates and  frequency of each word.
+}

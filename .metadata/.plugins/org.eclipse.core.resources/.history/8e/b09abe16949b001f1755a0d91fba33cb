@@ -1,0 +1,45 @@
+package com.cg.stat;
+
+public class Employee {
+	static {// It is a static block
+		System.out.println("Welcome to Capgemini");
+	}
+	static int counter = 0;
+	
+	private int id;
+	String name;
+	double salary ;
+
+
+	public Employee() {
+		super();
+	}
+
+	public Employee(int i, String n, int s)
+	{
+		this.id = i;
+		this.name = n;
+		this.salary=s;
+	}
+
+	public void display()
+	{
+		System.out.println("id : " + id + " name: " + name + " salary: " + salary);
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + "]";
+	}
+	
+	
+	
+}

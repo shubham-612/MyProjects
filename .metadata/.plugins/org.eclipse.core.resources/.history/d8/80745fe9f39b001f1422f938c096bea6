@@ -1,0 +1,9 @@
+package com.cg.string;
+// Write a method to remove duplicate characters from a given string.
+public class REMOVE_DUPLICATES {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.cg.heartrate;
+
+public class Heartrate {
+	
+	
+	public float restingheartrate(String str)
+	{
+		String res = str.substring(0);
+		Float rest =Float.valueOf(res);  
+		return rest;
+	}
+}

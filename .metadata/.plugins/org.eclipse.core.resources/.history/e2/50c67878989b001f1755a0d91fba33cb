@@ -1,0 +1,15 @@
+package com.cg.emp;
+
+public class UseEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee emp = new Employee();
+		emp.display();
+		Employee emp1 = new Employee(1, "Shubham" , 26156);
+		emp1.display();
+		emp1.setId(100);
+		System.out.println(emp1.getId());
+		System.out.println(emp1);
+	}
+}

@@ -1,0 +1,13 @@
+package com.cg.array;
+/*
+Write a function that finds the subarray with the maximum sum 
+from an array of integers (can contain both positive and negative numbers).
+ */
+public class SUBARRAY_WITH_MAX_SUM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

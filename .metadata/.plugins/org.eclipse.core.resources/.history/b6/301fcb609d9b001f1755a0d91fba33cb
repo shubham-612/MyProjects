@@ -1,0 +1,21 @@
+package com.cg.abstract_class;
+
+public class Fte extends Employee{
+	double salary;
+	
+	public Fte(double salary){
+	super();
+	this.salary = salary;
+	}
+	
+	public void display()
+	{
+		System.out.print(" Salary : " + salary);
+	}
+
+//	@Override
+//	public double salary() {
+//		// TODO Auto-generated method stub
+//		return salary;
+//	}
+}

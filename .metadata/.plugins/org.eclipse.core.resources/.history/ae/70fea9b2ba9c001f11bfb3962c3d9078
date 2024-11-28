@@ -1,0 +1,39 @@
+package com.cg.string;
+
+import java.util.Arrays;
+
+// Write a method to check if two strings are anagrams of each other.
+public class ANAGRAM {
+
+	public static int main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Shubham";
+		String t = "hsubamh";
+		
+		int count = 0;
+		String p = s.toLowerCase();
+		char[] ch = s.toCharArray();
+		Arrays.sort(ch);
+		for(int i = 1 ; i <= ch.length ; i++)
+		{
+			if( ch[i-1] == ch[i] )
+			    {
+				count++;
+			    }
+		}
+		return count;
+
+		
+//		s = s.toLowerCase();
+//		t = t.toLowerCase();
+//		
+//		char[] ch = s.toCharArray();
+//		char[] sh = t.toCharArray();
+//		
+//		Arrays.sort(ch);
+//		Arrays.sort(sh);
+//		
+//		System.out.println(Arrays.equals(ch, sh));
+	}
+
+}

@@ -1,0 +1,31 @@
+package com.cg.string_manipulation;
+
+import java.util.HashMap;
+
+public class FREQUENCY_COUNT {
+	  public static void main(String[] args) {
+	        // Example input string
+	        String input = "SHUBHAM";
+	        
+	        // Call the function to count character frequencies
+	        HashMap<Character, Integer> frequencyMap = countCharacterFrequency(input);
+	        
+	        // Print the result
+	        System.out.println(frequencyMap);
+	    }
+
+	    public static HashMap<Character, Integer> countCharacterFrequency(String input) {
+	        // Create a HashMap to store characters and their frequencies
+	        HashMap<Character, Integer> frequencyMap = new HashMap<>();
+
+	        // Convert the string to a char array for easy iteration
+	        for (char c : input.toCharArray()) {
+	            // If the character is already in the map, increment its count
+	            frequencyMap.put(c, frequencyMap.getOrDefault(c, 0) + 1);
+	        }
+
+	        // Return the frequency map
+	        return frequencyMap;
+	    }
+ 
+}

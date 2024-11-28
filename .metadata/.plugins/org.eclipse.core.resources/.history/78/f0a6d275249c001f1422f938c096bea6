@@ -1,0 +1,53 @@
+package com.cg.array;
+import java.util.Scanner;
+
+//import org.apache.commons.lang3.Validate;
+
+
+// Encrypter class to handle encryption
+class Encrypter {
+    // Method to encrypt the name
+    public static String getEncryptedName(String name) {
+        // Validate the name using the Validator class
+        if (Validator.validate(name)) {
+            // Reverse the string and convert to lowercase
+            StringBuilder reversedName = new StringBuilder(name);
+            reversedName.reverse();
+            return reversedName.toString().toLowerCase();
+        } else {
+            // If validation fails, throw an IllegalArgumentException
+            throw new IllegalArgumentException("Please provide a valid name");
+        }
+    }
+}
+/*
+ * Create the Encrypter class here.
+ */
+
+class Validator {
+    public static boolean validate(String name) {
+        for (int i = 0; i < name.length(); i++) {
+            char ch = name.charAt(i);
+            
+            if (ch != ' ' && !(Character.isLowerCase(ch) || Character.isUpperCase(ch))) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
+
+public class Test {
+    private static final Scanner INPUT_READER = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        String name = INPUT_READER.nextLine();
+        
+        try {
+            System.out.println(Encrypter.getEncryptedName(name));
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}

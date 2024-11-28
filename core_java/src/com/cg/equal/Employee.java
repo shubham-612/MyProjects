@@ -1,0 +1,53 @@
+package com.cg.equal;
+
+import java.util.Objects;
+
+public class Employee {
+
+private int id;
+String name;
+double salary ;
+
+
+public Employee() {
+	super();
+}
+
+public Employee(int i, String n, int s)
+{
+	this.id = i;
+	this.name = n;
+	this.salary=s;
+}
+
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public void display()
+{
+	System.out.println("id : " + id + " name: " + name + " salary: " + salary);
+}
+
+@Override
+public int hashCode() {
+	return Objects.hash(id, name, salary);
+}
+
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Employee other = (Employee) obj;
+	return id == other.id && Objects.equals(name, other.name)
+			&& Double.doubleToLongBits(salary) == Double.doubleToLongBits(other.salary);
+	}
+}

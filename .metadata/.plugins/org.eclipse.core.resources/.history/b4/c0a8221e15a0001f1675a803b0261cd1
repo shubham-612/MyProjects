@@ -1,0 +1,39 @@
+package com.cg.design;
+
+public class Test_Design {
+	
+	private static Test_Design instance = null;
+	
+	private Test_Design()
+	{
+		
+	}
+	
+	public static Test_Design getInstance()
+	{
+		if(instance == null)
+		{
+			instance = new Test_Design();
+		}
+		return instance;
+	}
+	
+	public void msg()
+	{
+		System.out.println("Hello world");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Test_Design t = Test_Design.getInstance();
+		t.msg();
+		System.out.println(t);
+		
+		Test_Design s = Test_Design.getInstance();
+		s.msg();
+		System.out.println(s);
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.cg.excep;
+import java.util.Scanner;
+/*
+Write a program that reads a number from the user and prints it squared. 
+If the input is not a number, catch the NumberFormatException.
+*/
+public class SQUARE_OF_NUMBER {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		try
+		{
+			System.out.println("Enter the value of n.");
+			int n = sc.nextInt();
+			System.out.println("Square of " + n + " is : " + Math.pow(n,2));
+		}
+		catch(Exception e)
+		{
+			System.out.println("Please enter a valid input.");
+		}
+		sc.close();
+	}
+}

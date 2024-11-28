@@ -1,0 +1,11 @@
+package com.cg.string;
+// Write a method to find the longest substring
+// in a given string that does not repeat characters.
+public class EX_7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

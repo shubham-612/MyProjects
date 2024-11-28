@@ -1,0 +1,19 @@
+package com.cg.heartrate;
+
+import java.util.Scanner;
+
+public class HeartRate {
+	
+	public HeartRate(String str) {
+		// TODO Auto-generated constructor stub
+		
+	}		
+
+
+public static void main(String args[])
+{
+	Scanner sc = new Scanner(System.in);
+	String str = sc.nextLine();
+	HeartRate hc = new HeartRate(str);	
+}
+}

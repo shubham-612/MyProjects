@@ -1,0 +1,26 @@
+package com.cg.array;
+
+import java.util.Arrays;
+import java.util.TreeSet;
+
+// Find the Second Largest Element
+public class SECOND_LARGEST {
+
+	public static Integer findSecondLargest(Integer[] nums) {
+        TreeSet<Integer> sortedSet = new TreeSet<>(Arrays.asList(nums));
+        if (sortedSet.size() < 2) {
+            return null; 
+        }
+        return sortedSet.lower(sortedSet.last());
+    }
+ 
+    public static void main(String[] args) {
+        Integer[] nums = {5, 1, 3, 4, 2, 2}; 
+        Integer secondLargest = findSecondLargest(nums);
+        if (secondLargest != null) {
+            System.out.println("The second largest element is: " + secondLargest);
+        } else {
+            System.out.println("Not enough distinct elements to find the second largest.");
+        }
+}
+}

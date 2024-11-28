@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/FILE_HANDLING/src/com/cg/fh/Test_Reader_Writer.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.cg.fh.Test_Reader_Writer"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="FILE_HANDLING"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="FILE_HANDLING"/>
+</launchConfiguration>

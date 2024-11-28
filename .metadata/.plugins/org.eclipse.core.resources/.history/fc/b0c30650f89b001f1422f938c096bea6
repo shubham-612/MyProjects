@@ -1,0 +1,19 @@
+package com.cg.string_manipulation;
+/*
+Write a function that compresses a string such that consecutive occurrences 
+of the same character are replaced by the character followed by the count of repetitions.
+•	Example:
+Input: "aabcccccaaa"
+Output: "a2b1c5a3"
+
+ */
+
+public class STRING_COMPRESSION {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "aabcccccaaa";
+		
+	}
+
+}

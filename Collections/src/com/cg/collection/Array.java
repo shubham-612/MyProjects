@@ -1,0 +1,50 @@
+package com.cg.collection;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Integer> a1 = new ArrayList<Integer>();
+		a1.add(4);
+		a1.add(8);
+		a1.add(12);
+		a1.add(null); // CAN PUT NULL VALUE
+		a1.add(4); // CAN PUT DUPLICATE VALUE
+		
+		int n = a1.size();
+		
+		for(int i=0;i<n;i++)
+		{
+			System.out.println(a1.get(i));
+		}
+		
+		// ANOTHER WAY TO PRINT THE ARRAYLIST
+		for(Integer a:a1)
+		{
+			System.out.println(a);
+		}
+	
+		// IT IS PRINTING IN BOTTOM TO UP.
+		Iterator<Integer> it = a1.iterator();
+		while(it.hasNext())
+		{
+			System.out.println("Elemenet is : " + it.next());
+		}
+		
+		ListIterator<Integer> at = a1.listIterator();
+		while(at.hasNext()) // FIRST TO LAST ORDER
+		{
+			System.out.println("Elemenet is : " + at.next());
+		}
+		
+		while(at.hasPrevious())// LAST TO FIRST ORDER
+		{
+			//System.out.println(at.hasNext());
+			System.out.println("Elemenet is : " + at.previous());
+		}
+	}
+}
